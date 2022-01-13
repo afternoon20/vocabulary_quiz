@@ -1,0 +1,213 @@
+.br-sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .br-sp {
+    display: inline;
+  }
+}
+
+.br-tab {
+  display: none;
+}
+
+@media screen and (max-width: 1149px) {
+  .br-tab {
+    display: inline;
+  }
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.form .contact__ttl-wrapper {
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .form .contact__ttl-wrapper {
+    text-align: center;
+  }
+}
+
+.form .contact__ttl {
+  border-left: 5px solid #2f87bf;
+  font-size: 24px;
+  margin-bottom: 16px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-top: 7px;
+}
+
+@media screen and (max-width: 767px) {
+  .form .contact__ttl {
+    border-bottom: 2px solid #2f87bf;
+    border-left: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 0 4px;
+  }
+}
+
+.form .contact__txt {
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .form .contact__txt {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+}
+
+.form .contact__txt--passed {
+  color: red;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.form .contact__txt--emp {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.contact-message {
+  color: red;
+}
+
+.contact-form {
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 32px 0;
+  padding: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form {
+    font-size: 14px;
+    margin-top: 16px;
+    padding: 24px;
+  }
+}
+
+.contact-form .contact-form__item {
+  margin-bottom: 32px;
+}
+
+.contact-form .contact-form__item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form .contact-form__ttl {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form .contact-form__ttl {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form .contact-form__txt {
+    margin-bottom: 8px;
+  }
+}
+
+.contact-form .contact-form__col {
+  margin-top: 16px;
+}
+
+.contact-form .contact-form__graduation {
+  margin-right: 8px;
+  width: 80%;
+}
+
+.contact-form .contact-form__list {
+  margin-bottom: 8px;
+  padding-left: 8px;
+}
+
+.contact-form .contact-form__list .contact-form__list-item {
+  margin-bottom: 8px;
+}
+
+.contact-form .contact-form__list .contact-form__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form .contact-form__check {
+  text-align: center;
+}
+
+.contact-form .contact-form__message {
+  background-color: #ddd;
+  text-align: center;
+}
+
+.recuit__btn--sending {
+  display: flex;
+}
+
+.header .header-disc {
+  color: #000;
+}
+
+.inner {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 40px;
+  width: 1150px;
+}
+
+@media screen and (max-width: 767px) {
+  .inner {
+    padding: 0 20px;
+  }
+}
+
+.mv {
+  background: rgba(50, 50, 50, 0.3) url(../img/dist/mv01.jpg) center center no-repeat;
+  background-size: cover;
+  margin-top: 80px;
+  padding: 200px 0 200px;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .mv {
+    padding: 100px 0 100px;
+  }
+}
+
+.mv:before {
+  background: rgba(0, 0, 0, 0.7);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.mv .mv__ttl {
+  text-align: center;
+}
+
+.mv .mv-txt {
+  font-size: 2.4em;
+}
+
+@media screen and (max-width: 767px) {
+  .mv .mv-txt {
+    font-size: 1.6em;
+  }
+}
