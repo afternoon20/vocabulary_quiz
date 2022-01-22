@@ -22,6 +22,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/material-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -41,12 +43,13 @@
     <main>
         <div class="row">
             @auth
-                <div class="col-2 p-3 position-sticky bg-light" style="height: 100vh">
-                    <ul>
-                        <li>問題</li>
+                <div class="col-2 p-3 position-sticky bg-light">
+                    <ul class="align-middle">
+                        <li><a href="{{ url('/system/admin/quiz') }}" class="text-black"><span class="material-icons">contact_support</span><span class="mb-1">問題</span></a>
+                        </li>
                     </ul>
                     <ul>
-                        <li>管理人</li>
+                        <li><a href="{{ url('/system/admin/admin') }}" class="text-black"><span class="material-icons">account_circle</span><span class="mb-1">管理者</span></a>
                     </ul>
                 </div>
             @endauth

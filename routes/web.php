@@ -33,7 +33,7 @@ Route::prefix('system/admin')->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::prefix('system/admin')->group(function () {
         Route::get('/', 'System\AdminController@index')->name('system/admin');
-        // Route::get('admin/admin','AdminController@index');
+        Route::get('/quiz', 'System\QuizController@index');
         // Route::get('admin/create','AdminController@index');
         // Route::post('admin/create','AdminController@create');
         // Route::get('admin/edit/{id}','AdminController@index');
