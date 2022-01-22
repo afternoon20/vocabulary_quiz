@@ -15,12 +15,11 @@ class CreateGroupsTable extends Migration
     {
         Schema::create('GROUPS', function (Blueprint $table) {
             $table->bigIncrements('GROUP_ID');
-            $table->string('GROUP_NAME')->nullable(true);
-            $table->string('GROUP_NOTE');
+            $table->string('GROUP_NAME')->nullable(false);
+            $table->string('GROUP_NOTE')->nullable(true);
             $table->datetime('GROUP_CREATE_AT');
             $table->datetime('GROUP_UPDATE_AT');
             $table->datetime('GROUP_DELETE_AT');
-            $table->primary('GROUP_ID');
         });
     }
 
