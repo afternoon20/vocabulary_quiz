@@ -14,13 +14,12 @@ class CreatePartsOfSpeechsTable extends Migration
     public function up()
     {
         Schema::create('PARTS_OF_SPEECHS', function (Blueprint $table) {
-            $table->smallInteger('PARTS_OF_SPEECHS_ID');
-            $table->string('PARTS_OF_SPEECHS_NAME');
-            $table->datetime('PARTS_OF_SPEECHS_NAME_CREATE_AT');
-            $table->datetime('PARTS_OF_SPEECHS_NAME_UPDATE_AT');
-            $table->datetime('PARTS_OF_SPEECHS_NAME_DELETE_AT');
-
-            $table->timestamps();
+            $table->smallInteger('PARTS_OF_SPEECH_ID');
+            $table->string('PARTS_OF_SPEECH_NAME');
+            $table->datetime('PARTS_OF_SPEECH_NAME_CREATE_AT');
+            $table->datetime('PARTS_OF_SPEECH_NAME_UPDATE_AT');
+            $table->datetime('PARTS_OF_SPEECH_NAME_DELETE_AT')->nullable(true);
+            $table->primary('PARTS_OF_SPEECH_ID');
         });
     }
 
