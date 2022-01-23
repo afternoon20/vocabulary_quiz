@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Http\Models\Parts\Of\Speech;
+use App\Models\Parts\Of\Speech;
 use Carbon\Carbon;
 
 class PartsOfSpeechTableSeeder extends Seeder
