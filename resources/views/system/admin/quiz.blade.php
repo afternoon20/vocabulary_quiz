@@ -19,6 +19,7 @@
                                 <thead class="bg-secondary text-white">
                                     <tr>
                                         <th class="text-center" scope="col">ID</th>
+                                        <th scope="col">品詞</th>
                                         <th scope="col">定冠詞</th>
                                         <th scope="col">単語</th>
                                         <th scope="col">意味</th>
@@ -36,9 +37,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -49,9 +48,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -62,9 +59,7 @@
                                         <td>Bis nachher!"</td>
                                         <td>(別れ際に)またあとで</td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -75,9 +70,7 @@
                                         <td>Das ist allgemain bekannt."</td>
                                         <td>それは一般的に知られている</td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -88,9 +81,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -101,9 +92,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -114,9 +103,7 @@
                                         <td>Bis nachher!"</td>
                                         <td>(別れ際に)またあとで</td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -127,9 +114,7 @@
                                         <td>Das ist allgemain bekannt."</td>
                                         <td>それは一般的に知られている</td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -140,9 +125,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -153,9 +136,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -166,9 +147,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -179,9 +158,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -192,9 +169,7 @@
                                         <td>Bis nachher!"</td>
                                         <td>(別れ際に)またあとで</td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -205,9 +180,7 @@
                                         <td>Das ist allgemain bekannt."</td>
                                         <td>それは一般的に知られている</td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -218,9 +191,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -231,9 +202,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -244,9 +213,7 @@
                                         <td>Bis nachher!"</td>
                                         <td>(別れ際に)またあとで</td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -257,9 +224,7 @@
                                         <td>Das ist allgemain bekannt."</td>
                                         <td>それは一般的に知られている</td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -270,9 +235,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -283,9 +246,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>
-                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a
-                                                href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal"
-                                                data-bs-target="#deleteModal">削除</a>
+                                            <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                         </td>
                                     </tr>
                                 </tbody>

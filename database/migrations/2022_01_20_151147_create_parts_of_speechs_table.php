@@ -16,9 +16,9 @@ class CreatePartsOfSpeechsTable extends Migration
         Schema::create('PARTS_OF_SPEECHS', function (Blueprint $table) {
             $table->smallInteger('PARTS_OF_SPEECH_ID');
             $table->string('PARTS_OF_SPEECH_NAME');
-            $table->datetime('PARTS_OF_SPEECH_NAME_CREATE_AT');
-            $table->datetime('PARTS_OF_SPEECH_NAME_UPDATE_AT');
-            $table->datetime('PARTS_OF_SPEECH_NAME_DELETE_AT')->nullable(true);
+            $table->datetime('PARTS_OF_SPEECH_NAME_CREATED_AT');
+            $table->datetime('PARTS_OF_SPEECH_NAME_UPDATED_AT');
+            $table->datetime('PARTS_OF_SPEECH_NAME_DELETED_AT')->nullable(true);
             $table->primary('PARTS_OF_SPEECH_ID');
         });
     }

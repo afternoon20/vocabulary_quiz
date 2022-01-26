@@ -23,8 +23,8 @@ class CreateQuizzesTable extends Migration
             $table->string('QUIZ_PHRASE_MEAN')->nullable(true);
             $table->string('QUIZ_SENTENSE')->nullable(true);
             $table->string('QUIZ_SENTENSE_MEAN')->nullable(true);
-            $table->datetime('QUIZ_CREATE_AT')->nullable(false);
-            $table->datetime('QUIZ_UPDATE_AT')->nullable(false);
+            $table->datetime('QUIZ_CREATED_AT')->nullable(false);
+            $table->datetime('QUIZ_UPDATED_AT')->nullable(false);
         });
     }
 

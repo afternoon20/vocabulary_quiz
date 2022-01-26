@@ -9,7 +9,7 @@ class Group extends Model
     protected $table = 'GROUPS';
     protected $primaryKey = 'GROUP_ID';
 
-    const CREATED_AT = 'GROUPS_CREATE_AT';
-    const UPDATED_AT = 'GROUPS_UPDATED_AT';
-    const DELETED_AT = 'GROUPS_DELETED_AT';
+    const CREATED_AT = 'GROUP_CREATED_AT';
+    const UPDATED_AT = 'GROUP_UPDATED_AT';
+    const DELETED_AT = 'GROUP_DELETED_AT';
 }

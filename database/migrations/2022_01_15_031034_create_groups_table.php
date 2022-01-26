@@ -17,9 +17,9 @@ class CreateGroupsTable extends Migration
             $table->bigIncrements('GROUP_ID');
             $table->string('GROUP_NAME')->nullable(false);
             $table->string('GROUP_NOTE')->nullable(true);
-            $table->datetime('GROUP_CREATE_AT');
-            $table->datetime('GROUP_UPDATE_AT');
-            $table->datetime('GROUP_DELETE_AT');
+            $table->datetime('GROUP_CREATED_AT');
+            $table->datetime('GROUP_UPDATED_AT');
+            $table->datetime('GROUP_DELETED_AT')->nullable(true);
         });
     }
 
