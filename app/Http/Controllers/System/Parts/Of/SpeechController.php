@@ -4,11 +4,11 @@ namespace App\Http\Controllers\System\Parts\Of;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Service\System\Admin\Parts\Of\SpeechService;
+use App\Services\System\Admin\Parts\Of\SpeechService as SpeechService;
 
 class SpeechController extends Controller
 {
-    /** @var  */
+    /** @var SpeechService */
     public SpeechService $speechService;
 
     public function __construct()

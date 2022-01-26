@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repository\Parts\Of;
+namespace App\Repositories\Parts\Of;
 
 use App\Models\Parts\Of\Speech;
 

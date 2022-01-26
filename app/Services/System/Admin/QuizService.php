@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Service\System\Admin;
+namespace App\Services\System\Admin;
 
-use App\Repository\Parts\Of\SpeechRepository;
+use App\Repositories\QuizRepository;
 use Illuminate\Http\Request;
 
 class QuizService
 {
-    /** @var SpeechRepository */
-    public SpeechRepository $speechRepository;
-    public $speechService;
+    /** @var QuizRepository */
+    public QuizRepository $quizRepository;
+    public $quizService;
 
     public function __construct()
     {
-        $this->speechRepository = new SpeechRepository;
+        $this->quizRepository = new QuizRepository;
     }
 
     public function findAll($params):array
     {
-        $this->speechService = $this->speechRepository->findAll($params);
+        $this->quizService = $this->quizRepository->findAll($params);
 
-        return $this->speechService;
+        return $this->quizService;
     }
 }

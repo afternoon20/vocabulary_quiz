@@ -36,26 +36,5 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/quiz', 'System\QuizController@index');
         Route::get('/parts/of/speech', 'System\Parts\Of\SpeechController@index');
         Route::get('/admin', 'System\Admin\AdminController@index');
-        // Route::get('admin/create','AdminController@index');
-        // Route::post('admin/create','AdminController@create');
-        // Route::get('admin/edit/{id}','AdminController@index');
-        // Route::put('admin/edit/{id}','AdminController@update');
-        // Route::put('admin/admin','AdminController@index');
-        // Route::get('quiz/create','QuizController@index');
-        // Route::post('quiz/create','QuizController@index');
-        // Route::get('/','AdminController@index');
     });
 });
-
-
-
-
-// Route::prefix('system/admin')->group(function () {
-    // $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
-    // $this->post('login', 'Auth\LoginController@login');
-    // $this->post('logout', 'Auth\LoginController@logout')->name('logout');
-// });
-
-// Route::group(['middleware' => ['auth'],'prifex' => 'system/admin'], function () {
-//     Route::get('/','AdminController@index');
-// });

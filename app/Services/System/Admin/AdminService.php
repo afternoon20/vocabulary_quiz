@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Service\System\Admin;
+namespace App\Services\System\Admin;
 
-use App\Repository\AdminRepository;
+use App\Repositories\AdminRepository;
 use Illuminate\Http\Request;
 
 class AdminService

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\System;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Service\System\Admin\QuizService;
+use App\Services\System\Admin\QuizService;
 
 class QuizController extends Controller
 {

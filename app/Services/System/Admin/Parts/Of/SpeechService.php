@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Service\System\Admin\Parts\Of;
+namespace App\Services\System\Admin\Parts\Of;
 
-use App\Repository\Parts\Of\SpeechRepository;
+use App\Repositories\Parts\Of\SpeechRepository;
 use Illuminate\Http\Request;
 
 class SpeechService

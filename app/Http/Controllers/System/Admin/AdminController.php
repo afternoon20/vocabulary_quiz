@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\System\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Service\System\Admin\AdminService as AdminService;
+use App\Services\System\Admin\AdminService as AdminService;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
