@@ -11,19 +11,22 @@ class QuizController extends Controller
 {
 
     /** @var QuizService  */
-    public QuizService $quizService;
+    private QuizService $quizService;
+    private $data;
 
     public function __construct()
     {
-        $data =[];
-        $this->quizService = new QuizService();
+        $this->quizService = new QuizService($this->data);
     }
 
     public function index(Request $request)
     {
         $params = $request->all();
-        $data = $this->quizService->findAll($params);
+        $this->data['params'] = $params;
+        $this->data += $this->quizService->findAll($params);
+        // var_dump($this->data);
+        // exit;
 
-        return view('system.admin.quiz', $data);
+        return view('system.admin.quiz', $this->data);
     }
 }

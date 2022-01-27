@@ -3,26 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\HomeService;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+    /** @var HomeService  */
+    private HomeService $homeService;
+
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->homeService = new HomeService();
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        $params = $request->all();
+        $data = $this->homeService->findAll($params);
+        return view('index', $data);
     }
 }

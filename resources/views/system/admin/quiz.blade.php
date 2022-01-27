@@ -34,14 +34,14 @@
                                         <tr>
                                             <td class="text-center">{{ $quiz->QUIZ_ID }}</td>
                                             <td>{{ $quiz->QUIZ_GROUP_ID }}</td>
-                                            <td>{{ $quiz->QUIZ_PARTS_OF_SPEECH }}</td>
+                                            <td>{{ $masterList['parts_of_speeches'][$quiz->QUIZ_PARTS_OF_SPEECH]['PARTS_OF_SPEECH_NAME'] }}</td>
                                             <td>{{ $quiz->QUIZ_DEFINITE_ARTICLE }}</td>
                                             <td>{{ $quiz->QUIZ_PHRASE }}</td>
                                             <td>{{ $quiz->QUIZ_PHRASE_MEAN }}</td>
                                             <td>{{ $quiz->QUIZ_SENTENSE }}</td>
                                             <td>{{ $quiz->QUIZ_SENTENSE_MEAN }}</td>
                                             <td>
-                                                <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
+                                                <a href="{{ url('system/admin/quiz' . $quiz->QUIZ_GROUP_ID . '/edit') }}" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                             </td>
                                         </tr>
                                     @endforeach

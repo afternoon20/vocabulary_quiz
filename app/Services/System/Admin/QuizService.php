@@ -11,9 +11,10 @@ class QuizService
     public QuizRepository $quizRepository;
     public $quizService;
 
-    public function __construct()
+    public function __construct(&$data)
     {
         $this->quizRepository = new QuizRepository;
+        $data['masterList'] = $this->quizRepository->setMaster();
     }
 
     public function findAll($params):array

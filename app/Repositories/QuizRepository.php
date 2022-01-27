@@ -3,17 +3,21 @@
 namespace App\Repositories;
 
 use App\Models\Quiz;
+use App\Repositories\MasterListRepository;
 
 class QuizRepository
 {
-    /** @var QuizRepository */
+    /** @var MasterListRepository */
+    private $masterListRepository;
 
     public function __construct()
     {
+        $this->masterListRepository = new MasterListRepository();
     }
 
-    public function setMaster(&$data)
+    public function setMaster()
     {
+        return $this->masterListRepository->partsOfSpeech();
     }
 
 

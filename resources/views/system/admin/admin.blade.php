@@ -6,7 +6,7 @@
                 グループ:2 を編集しました。
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <h1 class="border-bottom border-2 pb-3 mb-4">品詞一覧</h1>
+            <h1 class="border-bottom border-2 pb-3 mb-4">管理者一覧</h1>
             <div class="text-end my-3">
                 <a href="create.html" class="btn btn-primary">新規作成</a>
             </div>

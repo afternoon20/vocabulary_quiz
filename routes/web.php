@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::prefix('system/admin')->group(function () {
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
@@ -38,3 +35,6 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/admin', 'System\Admin\AdminController@index');
     });
 });
+
+// Route::get('/', 'QuizController@index');
+// Route::post('/answer', 'AnswerController@index');
