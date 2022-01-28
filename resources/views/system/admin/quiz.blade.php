@@ -19,8 +19,8 @@
                                 <thead class="bg-secondary text-white">
                                     <tr>
                                         <th class="text-center" scope="col">ID</th>
-                                        <th scope="col">品詞</th>
                                         <th scope="col">グループID</th>
+                                        <th scope="col">品詞</th>
                                         <th scope="col">定冠詞</th>
                                         <th scope="col">単語</th>
                                         <th scope="col">意味</th>
