@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::post('/answer', 'AnswerController@index');
+Route::post('/answer', 'AnswerController@index')->name('answer');
+Route::post('/answer/advance', 'AnswerController@advance');
+
 
 Route::prefix('system/admin')->group(function () {
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');

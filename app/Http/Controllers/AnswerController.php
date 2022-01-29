@@ -19,8 +19,13 @@ class AnswerController extends Controller
     {
         $params = $request->all();
         $data = $this->answerService->createQuizzes($params);
-        var_dump($data);
-        exit;
-        return view('index', $data);
+        return view('answer', $data);
+    }
+
+    public function advance(Request $request)
+    {
+        $params = $request->all();
+        $data = $this->answerService->advanceQuizzes($params);
+        return response()->json($data);
     }
 }

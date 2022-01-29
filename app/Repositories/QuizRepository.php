@@ -20,13 +20,15 @@ class QuizRepository
         return $this->masterListRepository->partsOfSpeech();
     }
 
-    public function find($params):array
+    public function find($params, $select = '*'):array
     {
         $quizzes = [];
         if (!empty($params['quiz_group_id'])) {
-            $quizzes = Quiz::whereIn('QUIZ_GROUP_ID', data_get($params, 'quiz_group_id'))->get();
+            $quizzes = Quiz::select($select)->whereIn('QUIZ_GROUP_ID', data_get($params, 'quiz_group_id'))->get();
+        } elseif (!empty($params['quiz_id'])) {
+            $quizzes = Quiz::select($select)->whereIn('QUIZ_ID', data_get($params, 'quiz_id'))->get();
         } else {
-            $quizzes = Quiz::inRandomOrder()->take($params['ramdom_quiz'] !='' ? $params['ramdom_quiz'] : 20)->get();
+            $quizzes = Quiz::select($select)->inRandomOrder()->take($params['ramdom_quiz'] !='' ? $params['ramdom_quiz'] : 20)->get();
         }
         if ($quizzes) {
             $quizzes = $quizzes->toArray();
@@ -35,14 +37,17 @@ class QuizRepository
         return compact('quizzes');
     }
 
+    public function findByPk(int $quiz_id):array
+    {
+        $quiz = Quiz::find($quiz_id);
+        $quiz->toArray();
+        return compact('quiz');
+    }
+
     public function findAll($params):array
     {
         $quizzes = Quiz::all();
         $quizzes->toJson();
         return compact('quizzes');
-    }
-
-    public function setQuizId($quizzes):array
-    {
     }
 }

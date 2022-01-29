@@ -1,4 +1,4 @@
-@include('system.layouts.header')
+@include('layouts.header')
 
 <body>
     <header class="bg-dark px-3">
@@ -11,4 +11,4 @@
     <main class="container ">
         @yield('content')
     </main>
-    @include('system.layouts.footer')
+    @include('layouts.footer')

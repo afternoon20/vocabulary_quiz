@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 * {
+    font-family: 'Lora', 'メイリオ', 'ヒラギノ角ゴシック', serif;
     text-decoration: none !important;
     list-style: none !important;
 }
