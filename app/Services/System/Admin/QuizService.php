@@ -3,6 +3,8 @@
 namespace App\Services\System\Admin;
 
 use App\Repositories\QuizRepository;
+use App\Repositories\GroupRepository;
+
 use Illuminate\Http\Request;
 
 class QuizService
@@ -10,10 +12,14 @@ class QuizService
     /** @var QuizRepository */
     public QuizRepository $quizRepository;
     public $quizService;
+    /** @var GroupRepository */
+    public GroupRepository $groupRepository;
+    public $groupService;
 
     public function __construct(&$data)
     {
         $this->quizRepository = new QuizRepository;
+        $this->groupRepository = new GroupRepository;
         $data['masterList'] = $this->quizRepository->setMaster();
     }
 
@@ -21,6 +27,14 @@ class QuizService
     {
         $this->quizService = $this->quizRepository->findAll($params);
 
+        return $this->quizService;
+    }
+
+    public function findGroupAndQuizzes(int $group_id):array
+    {
+        $this->quizService = $this->groupRepository->findbyPk($group_id);
+        $params['quiz_group_id'][] = $this->quizService['group']['GROUP_ID'];
+        $this->quizService += $this->quizRepository->find($params, '*', 'QUIZ_ORDER');
         return $this->quizService;
     }
 }

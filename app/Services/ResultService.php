@@ -16,9 +16,11 @@ class ResultService
         $this->quizRepository = new QuizRepository;
     }
 
-    public function index($params):array
+    public function fetch($params):array
     {
-        //TODO:問題リストを渡す。
+        $params['quiz_id'] = session('quizList');
+        $this->resultService =  $this->quizRepository->find($params);
+        $this->resultService['isCorrectList'] = session('isCorrectList');
         return $this->resultService;
     }
 }

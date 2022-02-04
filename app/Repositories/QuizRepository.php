@@ -20,7 +20,7 @@ class QuizRepository
         return $this->masterListRepository->partsOfSpeech();
     }
 
-    public function find($params, $select = '*'):array
+    public function find($params, $select = '*', $key = []):array
     {
         $quizzes = [];
         if (!empty($params['quiz_group_id'])) {
@@ -32,6 +32,14 @@ class QuizRepository
         }
         if ($quizzes) {
             $quizzes = $quizzes->toArray();
+        }
+
+        if (!empty($key)) {
+            $quizzes_tmp =[];
+            foreach ($quizzes as $quiz) {
+                $quizzes_tmp[$quiz[$key]] = $quiz;
+            }
+            $quizzes = $quizzes_tmp;
         }
 
         return compact('quizzes');

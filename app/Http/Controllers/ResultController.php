@@ -18,7 +18,7 @@ class ResultController extends Controller
     public function index(Request $request)
     {
         $params = $request->all();
-        $data = $this->resultService->createQuizzes($params);
+        $data = $this->resultService->fetch($params);
         return view('result', $data);
     }
 }

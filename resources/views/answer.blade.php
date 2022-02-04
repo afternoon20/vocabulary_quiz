@@ -20,7 +20,8 @@
                 </div>
             </div>
             <div id="to-result" class="row mt-5">
-                <form action="" method="POST">
+                <form action="{{ url('/result') }}" method="POST">
+                    @csrf
                     <div class="col">
                         <button type="submit" value="0" class="quiz-answer btn btn-success w-100">結果を見る</button>
                     </div>

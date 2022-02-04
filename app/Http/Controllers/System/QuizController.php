@@ -24,9 +24,25 @@ class QuizController extends Controller
         $params = $request->all();
         $this->data['params'] = $params;
         $this->data += $this->quizService->findAll($params);
-        // var_dump($this->data);
-        // exit;
 
         return view('system.admin.quiz', $this->data);
+    }
+
+    public function edit(int $group_id)
+    {
+        $this->data += $this->quizService->findGroupAndQuizzes($group_id);
+
+        // var_dump($this->data);
+        // exit;
+        return view('system.admin.quiz.edit', $this->data);
+    }
+
+    public function update(int $group_id, Request $request)
+    {
+        // $this->data += $this->quizService->findGroupAndQuizzes($group_id);
+        $params = $request->all();
+        var_dump($params);
+        exit;
+        return view('system.admin.quiz.edit', $this->data);
     }
 }

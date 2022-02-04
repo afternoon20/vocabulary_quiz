@@ -7,8 +7,8 @@
                 <a class="navbar-brand" href="{{ route('system/admin') }}">管理画面</a>
             </div>
             <a href="{{ url('/') }}" class="text-white text-nowrap bg-dark border-0">サイトを表示</a>
-            <span class="text-white p-3"> | </span>
             @auth
+                <span class="text-white p-3"> | </span>
                 <form class="d-flex ml-3" action="{{ route('logout') }}" method="POST">
                     @csrf
                     <button class="text-white text-nowrap bg-dark border-0">ログアウト</button>

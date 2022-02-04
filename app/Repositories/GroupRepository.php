@@ -18,4 +18,11 @@ class GroupRepository
         $groups->toJson();
         return compact('groups');
     }
+
+    public function findbyPk($group_id):array
+    {
+        $group = Group::find($group_id);
+        $group->toArray();
+        return compact('group');
+    }
 }

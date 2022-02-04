@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@index')->name('home');
 Route::post('/answer', 'AnswerController@index')->name('answer');
 Route::post('/answer/advance', 'AnswerController@advance');
+Route::post('/result', 'ResultController@index');
 
 
 Route::prefix('system/admin')->group(function () {
@@ -33,7 +34,7 @@ Route::prefix('system/admin')->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::prefix('system/admin')->group(function () {
         Route::get('/', 'System\AdminController@index')->name('system/admin');
-        Route::get('/quiz', 'System\QuizController@index');
+        Route::resource('quiz', 'System\QuizController', ['only' => ['index', 'create', 'edit','store','update','destroy']]);
         Route::get('/parts/of/speech', 'System\Parts\Of\SpeechController@index');
         Route::get('/admin', 'System\Admin\AdminController@index');
     });
