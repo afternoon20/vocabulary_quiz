@@ -36,9 +36,6 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/', 'System\AdminController@index')->name('system/admin');
         Route::resource('quiz', 'System\QuizController', ['only' => ['index', 'create', 'edit','store','update','destroy']]);
         Route::get('/parts/of/speech', 'System\Parts\Of\SpeechController@index');
-        Route::get('/admin', 'System\Admin\AdminController@index');
+        Route::resource('/admin', 'System\Admin\AdminController', ['only' => ['index','create','edit','update','sore','delete']]);
     });
 });
-
-// Route::get('/', 'QuizController@index');
-// Route::post('/answer', 'AnswerController@index');

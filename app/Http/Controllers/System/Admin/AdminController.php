@@ -23,4 +23,19 @@ class AdminController extends Controller
 
         return view('system.admin.admin', $data);
     }
+
+    public function edit(int $id)
+    {
+        $data = $this->adminService->findByPk($id);
+
+        return view('system.admin.admin.edit', $data);
+    }
+
+    public function update(Request $request)
+    {
+        $params = $request->all();
+        $data = $this->adminService->update($params);
+
+        return redirect('system/admin/admin')->with('infoMessages', 'id: '. $data['admin']['id'].'を更新しました');
+    }
 }

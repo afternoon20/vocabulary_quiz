@@ -22,4 +22,18 @@ class AdminService
 
         return $this->adminService;
     }
+
+    public function findByPk(int $id):array
+    {
+        $this->adminService = $this->adminRepository->findByPk($id);
+
+        return $this->adminService;
+    }
+
+    public function update($params):array
+    {
+        $this->adminService = $this->adminRepository->update($params);
+
+        return $this->adminService;
+    }
 }

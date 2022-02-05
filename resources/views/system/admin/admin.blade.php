@@ -2,10 +2,12 @@
 @section('content')
     <div class="col pt-3">
         <div class="container">
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                グループ:2 を編集しました。
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
+            @if (session('infoMessages'))
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    {{ session('infoMessages') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
             <h1 class="border-bottom border-2 pb-3 mb-4">管理者一覧</h1>
             <div class="text-end my-3">
                 <a href="create.html" class="btn btn-primary">新規作成</a>
@@ -30,7 +32,7 @@
                                             <td>{{ $admin->user_id }}</td>
                                             <td>{{ $admin->name }}</td>
                                             <td>
-                                                <a href="#" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
+                                                <a href="{{ url('system/admin/admin/' . $admin->id . '/edit') }}" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
                                             </td>
                                         </tr>
                                     @endforeach

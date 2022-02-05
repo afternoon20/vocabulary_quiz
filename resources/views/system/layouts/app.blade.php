@@ -19,7 +19,7 @@
     <main>
         <div class="row">
             @auth
-                <div class="col-2 p-3 position-sticky bg-light">
+                <div class="col-2 p-3 position-sticky bg-light" style="min-height: 80vh;">
                     <ul class="align-middle">
                         <li><a href="{{ url('/system/admin/quiz') }}" class="text-black"><span class="material-icons">contact_support</span><span class="mb-1">問題</span></a></li>
                     </ul>
