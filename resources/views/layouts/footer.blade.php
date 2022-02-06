@@ -26,7 +26,8 @@
                         })
                         // Ajaxリクエストが成功した場合
                         .done(function(data) {
-                            console.log(data["current"]);
+                            $("#definite-article").text("");
+                            $("#quiz-sentense").text("");
                             if (data["current"] <= data["total"]) {
                                 if (data['definite-article']) {
                                     $("#definite-article").text(data['definite-article'] + " ");
@@ -37,10 +38,7 @@
                             } else {
                                 $("#btn-area").hide();
                                 $("#to-result").show();
-                                console.log('問題ないよ');
                             }
-
-
                         })
                         // Ajaxリクエストが失敗した場合
                         .fail(function(XMLHttpRequest, textStatus, errorThrown) {

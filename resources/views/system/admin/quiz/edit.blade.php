@@ -11,18 +11,16 @@
             </div>
 
             <form action="{{ url('/system/admin/quiz/' . $group['GROUP_ID']) }}" method="POST">
-
                 @method('PUT')
-
                 @csrf
                 <div class="row">
                     <div class="col-10 mb-3">
                         <label for="group_id" class="form-label">グループ名</label>
-                        <input type="text" id="group_id" class="form-control" value={{ $group['GROUP_NAME'] }} placeholder="空欄の場合は日付が登録されます">
+                        <input type="text" id="group_id" class="form-control" name="GROUP_NAME" value={{ $group['GROUP_NAME'] }} placeholder="空欄の場合は日付が登録されます">
                     </div>
                     <div class="col-10 mb-3">
                         <label for="note" class="form-label">備考</label>
-                        <input type="text" id="note" value="{{ $group['GROUP_NOTE'] }}" class="form-control">
+                        <input type="text" id="note" name="GROUP_NOTE" value="{{ $group['GROUP_NOTE'] }}" class="form-control">
                     </div>
 
                     <div class="col-10 mb-3">
@@ -58,16 +56,13 @@
                                 <tbody>
                                     @for ($i = 1; $i <= 20; $i++)
                                         <tr>
-                                            <td class="text-center">{{ $i }}</td>
+                                            <td class="text-center">{{ $quizzes[$i]['QUIZ_ID'] }}</td>
                                             <input type="hidden" name='QUIZ_ID[]' value="{{ $quizzes[$i]['QUIZ_ID'] }}">
                                             <td>
                                                 <select id="quiz_parts_of_speech{{ $i }}" class="form-control" name='QUIZ_PARTS_OF_SPEECH[]' aria-label="Default select example">
                                                     @foreach ($masterList['parts_of_speeches'] as $partsOfSpeech)
                                                         <option value="{{ $partsOfSpeech['PARTS_OF_SPEECH_ID'] }}" {{ $partsOfSpeech['PARTS_OF_SPEECH_ID'] == $quizzes[$i]['QUIZ_PARTS_OF_SPEECH'] ? 'selected' : '' }}>{{ $partsOfSpeech['PARTS_OF_SPEECH_NAME'] }}</option>
                                                     @endforeach
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
                                                 </select>
                                             </td>
                                             <td><input type="text" id="quiz_definite_article{{ $i }}" class="form-control" name='QUIZ_DEFINITE_ARTICLE[]' value="{{ $quizzes[$i]['QUIZ_DEFINITE_ARTICLE'] }}"></td>
@@ -80,6 +75,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        <input type="hidden" name="GROUP_ID" value="{{ $group['GROUP_ID'] }}">
                         <div class="text-center my-3">
                             <button type="submit" class="btn btn-lg btn-primary">保存</button>
                         </div>

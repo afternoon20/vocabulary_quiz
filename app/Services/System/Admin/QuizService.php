@@ -37,4 +37,15 @@ class QuizService
         $this->quizService += $this->quizRepository->find($params, '*', 'QUIZ_ORDER');
         return $this->quizService;
     }
+
+    public function updateGroupAndQuizzes($params):array
+    {
+        $this->quizService = $this->groupRepository->update($params);
+        $params['QUIZ_GROUP_ID'] = $this->quizService['group']['GROUP_ID'];
+        $params['QUIZ_STATUS'] = $this->quizService['group']['GROUP_STATUS'];
+
+        // $quizParams = [];
+        $this->quizService += $this->quizRepository->update($params);
+        return $this->quizService;
+    }
 }

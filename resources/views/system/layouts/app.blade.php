@@ -16,8 +16,8 @@
             @endauth
         </nav>
     </header>
-    <main>
-        <div class="row">
+    <main class="container-fluid">
+        <div class="row flex-nowrap">
             @auth
                 <div class="col-2 p-3 position-sticky bg-light" style="min-height: 80vh;">
                     <ul class="align-middle">

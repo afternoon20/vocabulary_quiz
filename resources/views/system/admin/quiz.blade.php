@@ -14,51 +14,48 @@
             <div class="text-end my-3">
                 <a href="create.html" class="btn btn-primary">新規作成</a>
             </div>
-            <form action="#" method="post">
-                <div class="row">
-                    <div class="col">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-bordered raunded-2 text-nowrap">
-                                <thead class="bg-secondary text-white">
+
+            <div class="row">
+                <div class="col">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered raunded-2">
+                            <thead class="bg-secondary text-white">
+                                <tr>
+                                    <th class="text-center" scope="col">ID</th>
+                                    <th scope="col">グループID</th>
+                                    <th scope="col">品詞</th>
+                                    <th scope="col">定冠詞</th>
+                                    <th scope="col">単語</th>
+                                    <th scope="col">意味</th>
+                                    <th scope="col">例文</th>
+                                    <th scope="col">例文意味</th>
+                                    <th scope="col" style="width: 150px;"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($quizzes as $quiz)
                                     <tr>
-                                        <th class="text-center" scope="col">ID</th>
-                                        <th scope="col">グループID</th>
-                                        <th scope="col">品詞</th>
-                                        <th scope="col">定冠詞</th>
-                                        <th scope="col">単語</th>
-                                        <th scope="col">意味</th>
-                                        <th scope="col">例文</th>
-                                        <th scope="col">例文意味</th>
-                                        <th scope="col" style="width: 150px;"></th>
+                                        <td class="text-center">{{ $quiz->QUIZ_ID }}</td>
+                                        <td>{{ $quiz->QUIZ_GROUP_ID }}</td>
+                                        <td>{{ $masterList['parts_of_speeches'][$quiz->QUIZ_PARTS_OF_SPEECH]['PARTS_OF_SPEECH_NAME'] }}</td>
+                                        <td>{{ $quiz->QUIZ_DEFINITE_ARTICLE }}</td>
+                                        <td>{{ $quiz->QUIZ_PHRASE }}</td>
+                                        <td>{{ $quiz->QUIZ_PHRASE_MEAN }}</td>
+                                        <td>{{ $quiz->QUIZ_SENTENSE }}</td>
+                                        <td>{{ $quiz->QUIZ_SENTENSE_MEAN }}</td>
+                                        <td>
+                                            <a href="{{ url('system/admin/quiz/' . $quiz->QUIZ_GROUP_ID . '/edit') }}" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
+                                        </td>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($quizzes as $quiz)
-                                        <tr>
-                                            <td class="text-center">{{ $quiz->QUIZ_ID }}</td>
-                                            <td>{{ $quiz->QUIZ_GROUP_ID }}</td>
-                                            <td>{{ $masterList['parts_of_speeches'][$quiz->QUIZ_PARTS_OF_SPEECH]['PARTS_OF_SPEECH_NAME'] }}</td>
-                                            <td>{{ $quiz->QUIZ_DEFINITE_ARTICLE }}</td>
-                                            <td>{{ $quiz->QUIZ_PHRASE }}</td>
-                                            <td>{{ $quiz->QUIZ_PHRASE_MEAN }}</td>
-                                            <td>{{ $quiz->QUIZ_SENTENSE }}</td>
-                                            <td>{{ $quiz->QUIZ_SENTENSE_MEAN }}</td>
-                                            <td>
-                                                <a href="{{ url('system/admin/quiz/' . $quiz->QUIZ_GROUP_ID . '/edit') }}" class="text-dark rounded-2 py-1 px-3">編集</a><span>/</span><a href="#" class="text-dark rounded-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#deleteModal">削除</a>
-                                            </td>
-                                        </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="text-end mr-4">
-                            40 / 100件
-                        </div>
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
-
+                    <div class="text-end mr-4">
+                        40 / 100件
+                    </div>
                 </div>
-
-            </form>
+            </div>
             <nav>
                 <ul class="pagination justify-content-center">
                     <li class="page-item">

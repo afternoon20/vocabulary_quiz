@@ -37,12 +37,11 @@ class QuizController extends Controller
         return view('system.admin.quiz.edit', $this->data);
     }
 
-    public function update(int $group_id, Request $request)
+    public function update(Request $request)
     {
-        // $this->data += $this->quizService->findGroupAndQuizzes($group_id);
         $params = $request->all();
-        var_dump($params);
-        exit;
-        return view('system.admin.quiz.edit', $this->data);
+        $this->data += $this->quizService->updateGroupAndQuizzes($params);
+
+        return redirect('system/admin/quiz')->with('infoMessages', 'グループ: '. $this->data['group']['GROUP_ID'].'を更新しました');
     }
 }

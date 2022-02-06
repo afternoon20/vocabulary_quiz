@@ -9,7 +9,7 @@ class Quiz extends Model
     protected $table = 'QUIZZES';
     protected $primaryKey = 'QUIZ_ID';
 
-    const CREATED_AT = 'QUIZZES_CREATED_AT';
-    const UPDATED_AT = 'QUIZZES_UPDATED_AT';
-    const DELETED_AT = 'QUIZZES_DELETED_AT';
+    const CREATED_AT = 'QUIZ_CREATED_AT';
+    const UPDATED_AT = 'QUIZ_UPDATED_AT';
+    const DELETED_AT = 'QUIZ_DELETED_AT';
 }
