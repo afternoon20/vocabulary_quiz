@@ -15,7 +15,7 @@ class QuizzesTableSeeder extends Seeder
      */
     public function run()
     {
-        $file = new SplFileObject('storage/app/private/import/vocabularyList.csv');
+        $file = new SplFileObject('resources/csv/vocabularyList.csv');
         $file->setFlags(
             \SplFileObject::READ_CSV |
             \SplFileObject::READ_AHEAD |
