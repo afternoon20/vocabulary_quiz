@@ -56,6 +56,6 @@ class QuizzesTableSeeder extends Seeder
             ++$i;
         }
 
-        DB::table("Quizzes")->insert($list);
+        DB::table("QUIZZES")->insert($list);
     }
 }
